@@ -7,8 +7,16 @@
 // Header
 
 .header {
-  min-height: 500px;
+  min-height: 700px;
   background-image: url('../../images/mobile/image-hero.jpg');
   background-size: cover;
   background-position: center;
+
+  &-title {
+    margin-top: 160px;
+    padding: 25px 25px 20px;
+    border: 2px solid $White;
+    text-transform: uppercase;
+    color: $White;
+  }
 }
