@@ -27,4 +27,8 @@ a {
   font-family: "Alata", sans-serif;
 }
 
+.navbar-collapse {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

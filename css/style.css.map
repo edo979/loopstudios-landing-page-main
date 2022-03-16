@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/base/_typography.scss","../sass/base/_reset.scss"],"names":[],"mappings":"AAAQ;AACA;ACDR;AAAA;AAAA;EAGE;;;AAGF;EACE;;;ADJF;EACE;;;AAGF;AAAA;AAAA;AAAA;EAIE;EACA;;;AAGF;AAAA;EAEE","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/base/_typography.scss","../sass/base/_reset.scss","../sass/components/_navbar.scss"],"names":[],"mappings":"AAAQ;AACA;ACDR;AAAA;AAAA;EAGE;;;AAGF;EACE;;;ADJF;EACE;;;AAGF;AAAA;AAAA;AAAA;EAIE;EACA;;;AAGF;AAAA;EAEE;;;AEhBA;EACE","file":"style.css"}
