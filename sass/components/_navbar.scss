@@ -2,6 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
+
+  &-brand {
+    width: 145px;
+  }
+
+  &-toggler {
+    border: none;
+    background-color: transparent;
+  }
 
   &-collapse {
     display: none;
