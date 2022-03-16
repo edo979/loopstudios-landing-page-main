@@ -27,6 +27,22 @@ a {
   font-family: "Alata", sans-serif;
 }
 
+.container {
+  padding: 25px;
+}
+
+.header {
+  min-height: 500px;
+  background-image: url("../../images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .navbar-collapse {
   display: none;
 }
