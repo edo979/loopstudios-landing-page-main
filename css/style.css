@@ -27,11 +27,6 @@ ol[role=list] {
   list-style: none;
 }
 
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -84,6 +79,7 @@ h2,
 .h2 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 p,
@@ -95,6 +91,19 @@ h1,
 .h1 {
   line-height: 1;
   font-size: 2.65rem;
+  color: white;
+}
+
+h2,
+.h2 {
+  margin: 50px 0 20px;
+  line-height: 1.05;
+  font-size: 2.1rem;
+}
+
+p {
+  color: #8c8c8c;
+  line-height: 1.65;
 }
 
 .container {
@@ -103,16 +112,30 @@ h1,
 
 .header {
   min-height: 700px;
-  background-image: url("../../images/mobile/image-hero.jpg");
+  background-image: url("../images/mobile/image-hero.jpg");
+}
+.header-title {
+  margin-top: 170px;
+  padding: 25px 25px 20px;
+  border: 2px solid white;
+}
+
+.header,
+.intro-img {
   background-size: cover;
   background-position: center;
 }
-.header-title {
-  margin-top: 160px;
-  padding: 25px 25px 20px;
-  border: 2px solid white;
-  text-transform: uppercase;
-  color: white;
+
+.intro {
+  padding-top: 75px;
+}
+.intro-img {
+  height: 220px;
+  background-image: url("../../images/mobile/image-interactive.jpg");
+}
+.intro-article {
+  padding-inline: 20px;
+  text-align: center;
 }
 
 .navbar {

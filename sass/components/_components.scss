@@ -8,15 +8,34 @@
 
 .header {
   min-height: 700px;
-  background-image: url('../../images/mobile/image-hero.jpg');
-  background-size: cover;
-  background-position: center;
+
+  background-image: url('../images/mobile/image-hero.jpg');
 
   &-title {
-    margin-top: 160px;
+    margin-top: 170px;
     padding: 25px 25px 20px;
     border: 2px solid $White;
-    text-transform: uppercase;
-    color: $White;
+  }
+}
+
+.header,
+.intro-img {
+  background-size: cover;
+  background-position: center;
+}
+
+// Intro article
+
+.intro {
+  padding-top: 75px;
+  &-img {
+    height: 220px;
+
+    background-image: url('../../images/mobile/image-interactive.jpg');
+  }
+
+  &-article {
+    padding-inline: 20px;
+    text-align: center;
   }
 }
