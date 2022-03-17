@@ -129,6 +129,11 @@ p {
   text-decoration: none;
   letter-spacing: 4px;
   color: black;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
 }
 
 .header {
@@ -136,7 +141,7 @@ p {
   background-image: url("../images/mobile/image-hero.jpg");
 }
 .header-title {
-  margin-top: 170px;
+  margin-top: 160px;
   padding: 25px 25px 20px;
   border: 2px solid white;
 }

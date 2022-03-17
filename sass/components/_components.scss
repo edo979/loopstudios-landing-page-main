@@ -25,6 +25,13 @@
   letter-spacing: 4px;
 
   color: $Black;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $Black;
+    color: $White;
+  }
 }
 
 // Header
@@ -35,7 +42,7 @@
   background-image: url('../images/mobile/image-hero.jpg');
 
   &-title {
-    margin-top: 170px;
+    margin-top: 160px;
     padding: 25px 25px 20px;
     border: 2px solid $White;
   }
