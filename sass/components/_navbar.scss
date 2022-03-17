@@ -1,4 +1,5 @@
 .navbar {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,13 +9,37 @@
     width: 145px;
   }
 
-  &-toggler {
+  &-toggler,
+  &-close {
     border: none;
     background-color: transparent;
+    cursor: pointer;
   }
 
-  &-collapse {
+  &-collapse,
+  &-close {
     display: none;
+  }
+
+  &-nav {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 150px;
+    list-style: none;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: -25px;
+      top: -50px;
+      height: 100vh;
+      width: 100vw;
+      background-color: $Black;
+      z-index: -1;
+    }
   }
 }
 
@@ -25,5 +50,26 @@
     color: $White;
 
     @include menu-hover;
+  }
+}
+
+// mobile colapse
+.navbar.active {
+  z-index: 1;
+
+  .navbar-collapse,
+  .navbar-close {
+    display: block;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 1.4rem;
+    line-height: 2.1;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
   }
 }

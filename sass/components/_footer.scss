@@ -10,12 +10,11 @@
     &-brand {
       margin: 40px 0 40px;
     }
-
-    &-nav {
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+  }
+  &__navbar-nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
 
   .nav-item {
