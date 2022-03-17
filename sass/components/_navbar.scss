@@ -20,7 +20,10 @@
 
 .nav {
   &-link {
+    position: relative;
     text-decoration: none;
     color: $White;
+
+    @include menu-hover;
   }
 }

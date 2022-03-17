@@ -182,8 +182,19 @@ p {
 }
 
 .nav-link {
+  position: relative;
   text-decoration: none;
   color: white;
+}
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 30px;
+  background-color: white;
 }
 
 .card {
@@ -283,6 +294,19 @@ p {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+.footer__social-link {
+  position: relative;
+}
+.footer__social-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 30px;
+  background-color: white;
 }
 .footer__copyrights {
   margin-bottom: 15px;
