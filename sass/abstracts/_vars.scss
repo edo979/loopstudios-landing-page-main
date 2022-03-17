@@ -8,15 +8,21 @@ $Dark-Gray: hsl(0, 0%, 55%);
 $Very-Dark-Gray: hsl(0, 0%, 41%);
 
 @mixin menu-hover {
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    height: 1px;
+    width: 30px;
+    transform: translateX(50%);
+    background-color: transparent;
+
+    transition: all 0.3s;
+  }
   &:hover {
     &::after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
       transform: translateX(-50%);
-      height: 1px;
-      width: 30px;
       background-color: $White;
     }
   }

@@ -16,6 +16,8 @@
 
   background-size: cover;
 
+  transition: 0.5s ease-out;
+
   &::before {
     position: absolute;
     content: '';

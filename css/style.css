@@ -130,6 +130,7 @@ p {
   letter-spacing: 4px;
   color: black;
   cursor: pointer;
+  transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .btn:hover {
   background-color: black;
@@ -207,14 +208,19 @@ p {
   text-decoration: none;
   color: white;
 }
-.nav-link:hover::after {
+.nav-link::after {
   content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
-  transform: translateX(-50%);
   height: 1px;
   width: 30px;
+  transform: translateX(50%);
+  background-color: transparent;
+  transition: all 0.3s;
+}
+.nav-link:hover::after {
+  transform: translateX(-50%);
   background-color: white;
 }
 
@@ -250,6 +256,7 @@ p {
   color: white;
   z-index: 1;
   background-size: cover;
+  transition: 0.5s ease-out;
 }
 .card::before {
   position: absolute;
@@ -336,14 +343,19 @@ p {
 .footer__social-link {
   position: relative;
 }
-.footer__social-link:hover::after {
+.footer__social-link::after {
   content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
-  transform: translateX(-50%);
   height: 1px;
   width: 30px;
+  transform: translateX(50%);
+  background-color: transparent;
+  transition: all 0.3s;
+}
+.footer__social-link:hover::after {
+  transform: translateX(-50%);
   background-color: white;
 }
 .footer__copyrights {
