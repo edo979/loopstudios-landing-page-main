@@ -110,6 +110,15 @@ p {
   padding: 25px;
 }
 
+.grid-container {
+  display: grid;
+  justify-items: center;
+  margin-top: 50px;
+}
+.grid-container h2 {
+  margin-bottom: 30px;
+}
+
 .header {
   min-height: 700px;
   background-image: url("../images/mobile/image-hero.jpg");

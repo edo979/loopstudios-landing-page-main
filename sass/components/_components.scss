@@ -4,6 +4,17 @@
   padding: 25px;
 }
 
+.grid-container {
+  display: grid;
+  justify-items: center;
+
+  margin-top: 50px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
 // Header
 
 .header {
