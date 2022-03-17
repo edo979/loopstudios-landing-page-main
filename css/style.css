@@ -84,7 +84,8 @@ h2,
 }
 
 p,
-.nav-link {
+.nav-link,
+.btn {
   font-family: "Alata", sans-serif;
 }
 
@@ -118,6 +119,16 @@ p {
 }
 .grid-container h2 {
   margin-bottom: 50px;
+}
+
+.btn {
+  margin: 10px 0 50px;
+  padding: 10px 45px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  color: black;
 }
 
 .header {
