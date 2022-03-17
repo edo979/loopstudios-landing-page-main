@@ -17,3 +17,10 @@
     display: none;
   }
 }
+
+.nav {
+  &-link {
+    text-decoration: none;
+    color: $White;
+  }
+}
