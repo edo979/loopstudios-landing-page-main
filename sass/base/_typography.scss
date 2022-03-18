@@ -26,8 +26,7 @@ p,
 h1,
 .h1 {
   line-height: 1;
-  //font-size: 2.65rem;
-  font-size: clamp(2.65rem, 2.65rem + 10vw, 4.7rem);
+  font-size: 2.65rem;
 
   color: $White;
 }
@@ -45,8 +44,12 @@ p {
 }
 
 @include mq {
+  h1,
+  .h1 {
+    font-size: 4.7rem;
+  }
   h2,
   .h2 {
-    font-size: 3.2rem;
+    font-size: 3.3rem;
   }
 }
