@@ -38,3 +38,40 @@
     margin-bottom: 15px;
   }
 }
+
+@include mq {
+  .footer {
+    &__container {
+      display: grid;
+      grid-template:
+        'navigation social' auto
+        'navigation copyrights' auto
+        / 1fr 1fr;
+
+      padding-bottom: 15px;
+    }
+
+    &-nav {
+      grid-area: navigation;
+      .navbar-brand {
+        width: 145px;
+        margin: 30px 0;
+      }
+    }
+
+    &__social-links {
+      grid-area: social;
+      justify-self: end;
+    }
+
+    &__copyrights {
+      grid-area: copyrights;
+      justify-self: end;
+    }
+
+    &__navbar-nav {
+      display: flex;
+      gap: 30px;
+    }
+  }
+}
