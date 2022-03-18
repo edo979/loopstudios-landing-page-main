@@ -39,7 +39,7 @@
   }
 }
 
-@include mq {
+@include mq($break-point) {
   .footer {
     &__container {
       display: grid;

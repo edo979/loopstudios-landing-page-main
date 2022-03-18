@@ -33,7 +33,7 @@
     &::before {
       position: absolute;
       content: '';
-      left: -25px;
+      left: -50px;
       top: -50px;
       height: 100vh;
       width: 100vw;
@@ -74,7 +74,7 @@
   }
 }
 
-@include mq {
+@include mq($break-point) {
   .navbar {
     &-brand {
       width: 190px;

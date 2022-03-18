@@ -43,7 +43,7 @@ p {
   line-height: 1.65;
 }
 
-@include mq {
+@include mq($break-point) {
   h1,
   .h1 {
     font-size: 4.7rem;

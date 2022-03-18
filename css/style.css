@@ -108,7 +108,7 @@ p {
   line-height: 1.65;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
   h1,
 .h1 {
     font-size: 4.7rem;
@@ -176,9 +176,9 @@ p {
   text-align: center;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
   .container {
-    padding: 40px 160px;
+    padding: 40px clamp(50px, 11vw, 160px);
   }
 
   .grid-container {
@@ -245,6 +245,11 @@ p {
     background-color: white;
   }
 }
+@media (max-width: 1200px) {
+  .container {
+    padding-inline: 40px;
+  }
+}
 .navbar {
   position: relative;
   display: flex;
@@ -275,7 +280,7 @@ p {
 .navbar-nav::before {
   position: absolute;
   content: "";
-  left: -25px;
+  left: -50px;
   top: -50px;
   height: 100vh;
   width: 100vw;
@@ -321,7 +326,7 @@ p {
   text-transform: uppercase;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
   .navbar-brand {
     width: 190px;
   }
@@ -417,9 +422,10 @@ p {
   background-image: url(../images/mobile/image-fisheye.jpg);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
   .card {
     height: 470px;
+    min-width: 150px;
     margin: 0;
     padding: 30px 40px;
     font-size: 2.2rem;
@@ -512,7 +518,7 @@ p {
   margin-bottom: 15px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
   .footer__container {
     display: grid;
     grid-template: "navigation social" auto "navigation copyrights" auto/1fr 1fr;
@@ -539,7 +545,7 @@ p {
     gap: 30px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
   body {
     max-width: 1440px;
     margin: 0 auto;

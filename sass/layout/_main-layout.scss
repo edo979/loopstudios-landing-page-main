@@ -5,7 +5,7 @@
 @import '../components/card';
 @import '../components/footer';
 
-@include mq {
+@include mq($break-point) {
   body {
     max-width: 1440px;
     margin: 0 auto;

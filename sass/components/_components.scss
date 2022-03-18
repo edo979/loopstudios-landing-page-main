@@ -72,11 +72,11 @@
   }
 }
 
-@include mq {
+@include mq($break-point) {
   //Container
 
   .container {
-    padding: 40px 160px;
+    padding: 40px clamp(50px, 11vw, 160px);
   }
 
   .grid-container {
@@ -157,5 +157,11 @@
 
       background-color: $White;
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding-inline: 40px;
   }
 }

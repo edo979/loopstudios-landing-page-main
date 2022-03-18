@@ -8,7 +8,7 @@ $Dark-Gray: hsl(0, 0%, 55%);
 $Very-Dark-Gray: hsl(0, 0%, 41%);
 
 // Breaking point
-$break-point: 1200px;
+$break-point: 1050px;
 
 @mixin menu-hover {
   &::after {
@@ -31,8 +31,8 @@ $break-point: 1200px;
   }
 }
 
-@mixin mq {
-  @media (min-width: $break-point) {
+@mixin mq($min) {
+  @media (min-width: $min) {
     @content;
   }
 }

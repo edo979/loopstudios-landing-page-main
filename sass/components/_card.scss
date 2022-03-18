@@ -77,9 +77,10 @@
   background-image: url(../images/mobile/image-fisheye.jpg);
 }
 
-@include mq {
+@include mq($break-point) {
   .card {
     height: 470px;
+    min-width: 150px;
     margin: 0;
     padding: 30px 40px;
 
