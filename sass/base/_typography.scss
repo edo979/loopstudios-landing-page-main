@@ -43,3 +43,10 @@ p {
   color: $Dark-Gray;
   line-height: 1.65;
 }
+
+@include mq {
+  h2,
+  .h2 {
+    font-size: 3.2rem;
+  }
+}
