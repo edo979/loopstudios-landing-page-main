@@ -92,7 +92,7 @@ p,
 h1,
 .h1 {
   line-height: 1;
-  font-size: 2.65rem;
+  font-size: clamp(2.65rem, 2.65rem + 10vw, 4.7rem);
   color: white;
 }
 
@@ -165,6 +165,38 @@ p {
   text-align: center;
 }
 
+@media (min-width: 500px) {
+  .container {
+    padding: 40px 160px;
+  }
+
+  .header {
+    position: relative;
+    min-height: 650px;
+    background-image: url("../images/desktop/image-hero.jpg");
+    z-index: 1;
+  }
+  .header-title {
+    margin-top: 130px;
+    max-width: 650px;
+    max-height: 280px;
+    border-width: 3px;
+    padding: 40px 50px;
+  }
+  .header-title-br {
+    display: none;
+  }
+  .header::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+}
 .navbar {
   position: relative;
   display: flex;
@@ -241,6 +273,28 @@ p {
   text-transform: uppercase;
 }
 
+@media (min-width: 500px) {
+  .navbar-brand {
+    width: 190px;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .navbar-collapse {
+    display: block;
+    position: relative;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+  .navbar-nav::before {
+    display: none;
+  }
+  .navbar .nav-link {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+  }
+}
 .card {
   position: relative;
   margin-bottom: 25px;
@@ -360,6 +414,14 @@ p {
 }
 .footer__copyrights {
   margin-bottom: 15px;
+}
+
+@media (min-width: 500px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

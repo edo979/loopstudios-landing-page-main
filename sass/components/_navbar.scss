@@ -73,3 +73,35 @@
     text-transform: uppercase;
   }
 }
+
+@include mq {
+  .navbar {
+    &-brand {
+      width: 190px;
+    }
+
+    &-toggler {
+      display: none;
+    }
+
+    &-collapse {
+      display: block;
+      position: relative;
+      padding: 0;
+
+      display: flex;
+      gap: 30px;
+    }
+
+    &-nav {
+      &::before {
+        display: none;
+      }
+    }
+
+    .nav-link {
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+    }
+  }
+}

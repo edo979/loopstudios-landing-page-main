@@ -4,3 +4,11 @@
 @import '../components/navbar';
 @import '../components/card';
 @import '../components/footer';
+
+@include mq {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+}
